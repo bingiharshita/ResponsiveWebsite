@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoes</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(218, 218, 217, 0.76);
+        padding: 10px;
+        display: flex;
+        gap:30px;
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .box{
+       min-height: 350px;
+        width: 350px;
+        max-height: 300px;
+        border-radius: 10px;
+        padding: 10px;
+   
+    }
+   .box1{
+    background-image: url(usama-akram-g3CMh2nqj_w-unsplash\ \(4\).jpg);
+    background-size: cover;
+    box-shadow: 20px 20px 20px gray;
+   }
+   .box2{
+    background-image: url(usama-akram-kP6knT7tjn4-unsplash.jpg);
+    background-size: cover;
+    box-shadow: 20px 20px 20px gray;
+   }
+   .box3{
+    background-image: url(usama-akram-s-gYAbQToXk-unsplash.jpg);
+    background-size: cover;
+    box-shadow: 20px 20px 20px gray;
+   }
+   
+   .shopnow{
+ width:90px;
+ height: 40px;
+ padding: 5px;
+ font-size: 17px;
+ border-radius: 18px;
+ border: none;
+ margin-top: 18px;
+ background-color: rgb(238, 236, 236);
+ position: relative;
+ right:7px;
+ cursor: pointer;
+ box-shadow: 0px 0px 10px rgb(196, 195, 195);
+   }
+.sub-heading{
+    width: 280px;
+    font-size: 16px;
+    margin-top: 8px;
+  
+}
+.price{
+    margin-top: 10px;
+    font-size: 25px;
+}
+  
+@media(max-width:1000px)
+        {
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+        @media(max-width:500px){
+            .container{
+                flex-direction: row;
+                gap:3px;
+            }
+            .sub-heading{
+                width: 100px;
+            }
+            .heading{
+                font-size: 15px;
+            }
+            button{
+                padding: 6px;
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 box">
+            <h1 class="heading">Nike legend 2 </h1>
+            <p class="sub-heading">Nike legend Essential 2 Training & Gym Shoes</p>
+            <p class="price">$100</p>
+            <button class="shopnow">Shop now</button>
+        </div>
+        <div class="box2 box">
+            <h1 class="heading">Nike SuperRep Go</h1>
+            <p class="sub-heading">Nike SuperRep Go Training & Gym Shoes for Men</p>
+            <p class="price">$120</p>
+            <button class="shopnow">Shop now</button>
+        </div>
+        <div class="box3 box">
+            <h1 class="heading">Nike Jordan 7 Retro</h1>
+            <p class="sub-heading">Nike Jordan 7 Retro for Basketball & Causal</p>
+            <p class="price">$140</p>
+            <button class="shopnow">Shop now</button>
+        </div>
+
+       
+    </div>
+</body>
+</html>
